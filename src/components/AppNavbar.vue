@@ -18,21 +18,12 @@
   
       <!-- Mobile Navbar -->
       <div class="nav-container mobile-navbar" v-if="isMobile">
-        <div class="nav-hamburger" @click="toggleMenu">
-          <div class="hamburger-icon" :class="{ 'active': isMenuOpen }"></div>
+        <div class="nav-logo">
+          <router-link to="/">
+            <img src="@/assets/logo.png" alt="Logo" class="logo-image">
+          </router-link>
         </div>
   
-        <!-- Mobile Slide-in Menu -->
-        <div class="nav-content-mobile" :class="{ 'active': isMenuOpen }">
-          <router-link to="/">
-            <img src="@/assets/logo.png" alt="Logo" class="logo-image-mobile">
-          </router-link>
-          <div class="nav-top">
-            <router-link to="/" class="nav-link">What's Your Why?</router-link>
-          </div>
-          <div class="nav-divider"></div>
-
-        </div>
       </div>
     </nav>
   </template>
@@ -202,9 +193,10 @@
     .desktop-navbar {
       display: none; /* Hide the desktop navbar on mobile */
     }
-  
+    
+
     .nav-content-mobile {
-      display: flex;
+      display: none;
       position: fixed;
       top: 0;
       left: 0;
