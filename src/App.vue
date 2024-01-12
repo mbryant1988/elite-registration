@@ -6,12 +6,27 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Navbar from './components/AppNavbar.vue';
+import { event } from 'vue-gtag';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     Navbar
+  },
+
+  setup() {
+    const pageView = () => {
+      event('pageView', { method: 'Web' })
+    }
+    
+    return {
+      pageView,
+    }
+  },
+
+  mounted() {
+    document.title = "Register";
   }
 }
 </script>
