@@ -6,13 +6,19 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Navbar from './components/AppNavbar.vue';
-import { event } from 'vue-gtag';
+import { event, pageview } from 'vue-gtag';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     Navbar
+  },
+
+  methods: {
+    track() {
+       pageview("/");
+    },
   },
 
   setup() {
