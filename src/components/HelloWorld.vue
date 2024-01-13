@@ -1,7 +1,7 @@
 <template>
   <div class="regForm">
 
-  <iframe class="frame" src="https://docs.google.com/forms/d/e/1FAIpQLSfsfHBMLe7HW9IY2tyAMgKxWsal3WAChWvVwfXE1ogyj-yo-A/viewform?embedded=true" width="640" height="3200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdVPUDVR_VUmo8YvZ_XMhgmJto2E84u8rkLeGZrmFrkofYbFQ/viewform?embedded=true" width="640" height="3200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 </div>
 
